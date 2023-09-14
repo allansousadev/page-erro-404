@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    body {
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .header {
+      position: fixed;
+      width: 100%;
+      padding: 40px 60px;
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      font-display: inherit;
+      color: #0488d1;
+    }
+
+    .logo-titulo {
+      font-size: 1.3rem;
+      font-weight: lighter;
+      font-display: inherit;
+      color: #413f3e;
+    }
+
+    .navigation ul {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .navigation ul li a {
+      color: #0488d1;
+      font-size: 1.2rem;
+      transition: all .1s ease;
+      display: block;
+    }
+
+    .navigation ul li a:hover {
+      border-bottom: 3px solid #0488d1;
+      display: block;
+    }
+
+    .main {
+      overflow: hidden;
+    }
+
+    .section {
+      padding: 8rem;
+      height: 100vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .left p {
+      font-size: 2.2rem;
+      color: #e20119;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+
+    .left h4 {
+      font-size: 3.5rem;
+      color: #0488d1;
+      margin-bottom: 3rem;
+    }
+
+    .btn {
+      padding: 1.5rem 5rem;
+      background: #1c683f;
+      border-radius: 15px;
+      color: #0488d1;
+      font-size: 1.2rem;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      box-shadow: 0 1px 4px #0488d1;
+    }
+
+    .right img {
+      width: 500px;
+      margin-bottom: 1rem;
+      animation: float 1.8s infinite alternate;
+    }
+
+    .shadow {
+      width: 450px;
+      height: 45px;
+      background: hsla(38, 21%, 19%, .16);
+      border-radius: 50%;
+      margin: 0 auto;
+      filter: blur(5px);
+      animation: shadow 1.8s infinite alternate;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(15px);
+      }
+    }
+
+    @keyframes shadow {
+      0% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(.85, .85);
+      }
+    }
+  </style>
+  <title>Erro 404</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navigation">
+      <a href="https://www.mg.gov.br/instituicao_unidade/escola-de-saude-publica-do-estado-de-minas-gerais-esp" class="logo">ESP-MG</a>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/contacts.html">Contatos</a></li>
+      </ul>
+    </nav>
+    <a href="https://www.mg.gov.br/instituicao_unidade/escola-de-saude-publica-do-estado-de-minas-gerais-esp" class="logo-titulo">Escola de Saúde Pública de Minas Gerais</a>
+  </header>
+  <main class="main">
+    <section class="section">
+      <div class="left">
+        <p>Erro 404</p>
+        <h4>Desculpe estamos fora do ar<br> Retornamos em breve.</h4>
+      </div>
+      <div class="right">
+        <img src="/images/erro-404.png" alt="imagem de erro 404">
+        <div class="shadow"></div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
